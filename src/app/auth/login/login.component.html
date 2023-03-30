@@ -1,0 +1,73 @@
+<!-- routerLink="/confirm-mail"   [formGroup]="form"  [disabled]="form.invalid"
+
+    
+
+
+-->
+
+<div class="container card__container">
+    <div class="auth">
+        <h3 class="title">Войти в аккаунт</h3>
+        <div class="tabs">
+            <button class="tabs__btn" (click)="showFormStud()">Я студент</button>
+            <button class="tabs__btn" (click)="showFormComp()">Я компания</button>
+        </div>
+
+        <form class="card" 
+            *ngIf="showStudent"
+            [formGroup]="form"
+            (ngSubmit)="onSubmit()"
+        >
+
+            <div class="card__item">
+                <label class="card__label" for="email">E-mail</label>
+                <input class="card__input" type="email" id="email" formControlName="email">
+                <span class="error" *ngIf="form.get('email').invalid && form.get('email').touched">
+                    <span *ngIf="form.get('email').errors['required']">E-Mail не должен быть пустым</span>
+                    <span *ngIf="form.get('email').errors['email']">Введите корректный E-Mail</span>
+                </span>
+            </div>
+            <div class="card__item _show">
+                <label class="card__label" for="passport">Пароль</label>
+                <input class="card__input" [type]="show ? 'text' : 'password'" id="password" formControlName="password">
+                <span class="error" *ngIf="form.get('password').invalid && form.get('password').touched">
+                    <span *ngIf="form.get('password').errors['required']">Пароль не должен быть пустым</span>
+                    <span
+                        *ngIf="form.get('password').errors['minlength'] && form.get('password').errors['minlength']['requiredLength']">
+                        Пароль должен быть больше {{form.get('password').errors['minlength']['requiredLength']}}
+                        символов.
+                    </span>
+                </span>
+                <a class="show-pass" (click)="password()"></a>
+            </div>
+            <button class="card__btn" 
+            type="submit"
+            
+            >Продолжить</button>
+        </form>
+
+
+
+        <form class="card" *ngIf="showCompany">
+            <div class="card__item">
+                <label class="card__label" for="inn">ИНН</label>
+                <input class="card__input" type="text" id="inn">
+            </div>
+            <div class="card__item">
+                <label class="card__label" for="email">E-mail</label>
+                <input class="card__input" type="email" id="email">
+            </div>
+            <div class="card__item _show">
+                <label class="card__label" for="passport">Пароль</label>
+                <input class="card__input" [type]="show ? 'text' : 'password'" id="password">
+                <button class="show-pass" (click)="password()">{{show ? 'Show' : 'Hide'}}</button>
+            </div>
+            <button class="card__btn" type="submit">Продолжить</button>
+        </form>
+
+        <div class="redirect">
+            <p class="redirect__text">Еще нет аккаунта?</p>
+            <a class="redirect__link" routerLink="/registration">Регистрация</a>
+        </div>
+    </div>
+</div>

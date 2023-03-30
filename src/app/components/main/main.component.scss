@@ -1,0 +1,103 @@
+.filter{
+    background: #fff;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__input{
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+    &__label{
+        color: #393939;
+    }
+}
+
+.search{
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 90px;
+    &__input{
+        width: 100%;
+        height: 80px;
+        padding: 10px 250px 10px 40px;
+        font-family: inherit;
+        font-size: inherit;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+    }
+    &__btn{
+        height: 100%;
+        position: absolute;
+        right: 84px;
+        padding: 22px 32px;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-left: 1px solid #BEBEBE;
+        border-right: 1px solid #BEBEBE;
+        color: #1360ED;
+    }
+    &__filter{
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 26px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-image: url(../../../assets/images/filter.png);
+    }
+}
+
+.specialitys{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 30px;
+    &__item{
+        border-radius: 15px;
+        padding: 50px 0 20px;
+        text-align: center;
+        background: #fff;
+        width: 262px;
+        height: 150px;
+        color: #1360ED;
+    }
+    &__title{
+        margin-bottom: 20px;
+        padding-bottom: 11px;
+        border-bottom: 1px solid #BEBEBE;
+    }
+}
+
+.directions{
+    &__text{
+        padding: 10px;
+        display: inline-block;
+        font-size: 22px;
+        color: #1360ED;
+        border: 1px solid #1360ED;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        background: #fff;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}

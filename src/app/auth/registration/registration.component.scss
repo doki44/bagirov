@@ -1,0 +1,145 @@
+
+
+.form{
+    margin-bottom: 45px;
+    min-height: 320px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 0;
+    &__group{
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    // студент
+    &__student{
+        padding: 0 130px 0 30px;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &._show {
+            position: relative;
+            input{
+                padding-right: 45px;
+            }
+        }
+    }
+    &__label{
+        color: #2E90CE;
+    }
+    &__input{
+        font-size: inherit;
+        font-family: inherit;
+        padding: 0 15px;
+        height: 60px;
+        width: 708px;
+        border: 1px solid #595959;
+        border-radius: 10px;
+    }
+    &__btn{
+        background: #1360ED;
+        border-radius: 10px;
+        padding: 10px 100px;
+        color: #FFFFFF;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: inherit;
+        font-family: inherit;
+    }
+    &__descr{
+        font-size: 28px;
+    }
+    &__text{
+        color: #595959;
+        margin-right: 20px;
+        display: inline-block;
+    }
+    &__link{
+        color: #2E90CE;
+        display: inline-block;
+    }
+    // компания
+    &__company{
+        font-size: 32px;
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    &__span{
+        display: block;
+        color: #919191;
+        text-align: left;
+        padding-top: 10px;
+    }
+    &__check{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #595959;
+        border-radius: 10px;
+        outline: none;
+    }
+    &__title{
+        font-weight: 700;
+        color: #1360ED;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.btn__inn{
+    padding: 9px 20px;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    outline: none;
+    width: 800px;
+    color: #1360ED;
+    background-color: #FFFFFF;
+    margin-bottom: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: inherit;
+}
+
+.show-pass{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    background-image: url(../../../assets/images/show-pass.png);
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    &__btn{
+        width: 50%;
+        font-size: 32px;
+        color: #595959;
+        border: none;
+        border-bottom: 5px solid #BEBEBE;
+        background: transparent;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            color: #1360ED;
+            border-bottom: 5px solid #1360ED;
+        }
+    } 
+}
+
+.title{
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 60px;
+}

@@ -1,0 +1,165 @@
+<main class="main">
+    <div class="container">
+        <div class="main__inner">
+            <div class="search">
+                <input class="search__input" type="text" name="search" id="search"
+                    placeholder="Направление, специальность или проект">
+                <button class="search__btn">Найти</button>
+                <button class="search__filter" (click)="showFilter()"></button>
+            </div>
+            <div class="filter" *ngIf="filter">
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Ядерная энергетика и технологии</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Информатика и вычислительная техника</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Электроника, радиотехника и системы связи</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Промышленная экология и биотехнологии</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Техника и технологии наземного транспорта</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Управление в технических системах</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Нефтегазовое дело и геология, геодезия</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Авиационная и ракетно-космическая техника</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Математика и механика</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Машиностроение</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Химические технологии</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Электро- и теплоэнергетика</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Технологии материалов</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Экономика и управление</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">История и археология</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Оружие и системы вооружения</label>
+                </div>
+            </div>
+
+            <div class="specialitys">
+                <a class="specialitys__item" routerLink="/vacancy">
+                    <p class="specialitys__title">Веб разработка</p>
+                    <p class="specialitys__descr">24 задачи</p>
+                </a>
+
+                <!-- остальное из бд -->
+
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Графический дизайн</p>
+                    <p class="specialitys__descr">33 задачи</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">3D графика</p>
+                    <p class="specialitys__descr">61 задачa</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Программирование</p>
+                    <p class="specialitys__descr">84 задачи</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Видеообработка</p>
+                    <p class="specialitys__descr">45 задачи</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Анимирование</p>
+                    <p class="specialitys__descr">20 задачи</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Архитектура</p>
+                    <p class="specialitys__descr">112 задачи</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Менеджмент</p>
+                    <p class="specialitys__descr">57 задачи</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Инженерия</p>
+                    <p class="specialitys__descr">9 задачи</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Маркетинг</p>
+                    <p class="specialitys__descr">41 задачи</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Переводы</p>
+                    <p class="specialitys__descr">10 задачи</p>
+                </div>
+                <div class="specialitys__item">
+                    <p class="specialitys__title">Инфографика</p>
+                    <p class="specialitys__descr">71 задачи</p>
+                </div>
+            </div>
+
+            <div class="directions">
+                <a class="directions__text" href="#">Специалист поддержки</a>
+                <a class="directions__text" href="#">Java Developer</a>
+                <a class="directions__text" href="#">Web-тестировщик</a>
+                <a class="directions__text" href="#">Front-end</a>
+                <a class="directions__text" href="#">HTML-верстальщик</a>
+                <a class="directions__text" href="#">Web-разработчик</a>
+                <a class="directions__text" href="#">Менеджер проектов</a>
+                <a class="directions__text" href="#">Инженер по тестированию</a>
+                <a class="directions__text" href="#">Java Script разработчик</a>
+                <a class="directions__text" href="#">Аналитик данных</a>
+                <a class="directions__text" href="#">Программист C#</a>
+                <a class="directions__text" href="#">Инженер технической поддержки</a>
+                <a class="directions__text" href="#">Продакт-менеджер</a>
+                <a class="directions__text" href="#">Integration Consultant</a>
+                <a class="directions__text" href="#">QA Engineer</a>
+                <a class="directions__text" href="#">Дизайнер</a>
+                <a class="directions__text" href="#">.Net Разработчик</a>
+                <a class="directions__text" href="#">Системный администратор</a>
+                <a class="directions__text" href="#">UI\UX Дизайнер</a>
+                <a class="directions__text" href="#">Аналитик 1C</a>
+                <a class="directions__text" href="#">Дизайнер интерьера</a>
+                <a class="directions__text" href="#">Аккаунт-менеджер</a>
+                <a class="directions__text" href="#">Web-дизайнер</a>
+                <a class="directions__text" href="#">Аналитик бизнес-процессов</a>
+                <a class="directions__text" href="#">Программист PHP</a>
+                <a class="directions__text" href="#">Финансовый аналитик</a>
+                <a class="directions__text" href="#">Программист Unity</a>
+                <a class="directions__text" href="#">Python разработчик</a>
+                <a class="directions__text" href="#">CRM менеджер</a>
+                <a class="directions__text" href="#">3D-Designer</a>
+            </div>
+        </div>
+    </div>
+</main>

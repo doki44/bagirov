@@ -1,0 +1,165 @@
+<div class="container">
+    <div class="form">
+        <h3 class="title">Создать аккаунт</h3>
+        <div class="tabs">
+            <button class="tabs__btn" (click)="showFormStud();">Студент</button>
+            <button class="tabs__btn" (click)="showFormComp();">Компания</button>
+        </div>
+
+        <!-- студент -->
+
+        <form class="form__group form__student" *ngIf="showStudent">
+            <div class="form__item">
+                <label for="name" class="form__label">Фамилия</label>
+                <input id="name" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="surname" class="form__label">Имя</label>
+                <input id="surname" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="father-name" class="form__label">Отчество</label>
+                <input id="father-name" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="email" class="form__label">E-mail</label>
+                <input id="email" type="email" class="form__input">
+            </div>
+            <div class="form__item _show">
+                <label for="password" class="form__label">Пароль</label>
+                <input id="password" [type]="show ? 'text' : 'password'" class="form__input">
+                <a class="show-pass" (click)="password()"></a>
+            </div>
+            <div class="form__item">
+                <label for="password" class="form__label">Повторите пароль</label>
+                <input id="password" [type]="show ? 'text' : 'password'" class="form__input">
+            </div>
+            <button class="form__btn" type="submit" routerLink="/confirm">Продолжить</button>
+        </form>
+
+        <!-- компания -->
+
+        <form class="form__group form__company" *ngIf="showCompany">
+            <button class="btn__inn">Заполнить реквизиты автоматически по ИНН</button>
+            <div class="form__item">
+                <label for="full_name_comp" class="form__label">Полное название</label>
+                <div>
+                    <input id="full_name_comp" type="text" class="form__input">
+                    <span class="form__span">Используется в документах</span>
+                </div>
+            </div>
+            <div class="form__item">
+                <label for="short_name_comp" class="form__label">Краткое название</label>
+                <div>
+                    <input id="short_name_comp" type="text" class="form__input">
+                    <span class="form__span">Используется в интерфейсе Эльбы</span>
+                </div>
+            </div>
+            <div class="form__item">
+                <label for="legal_address" class="form__label">Юридический адрес</label>
+                <input id="legal_address" type="text" class="form__input"
+                    placeholder="Например, г. Екатеринбург, пр. Ленина, 99, оф. 234">
+            </div>
+            <div class="form__item">
+                <p class="form__label">Фактический адрес</p>
+                <div>
+                    <input id="actual_address" type="checkbox" class="form__check">
+                    <label for="actual_address" style="color: #2E90CE;">Совпадает с юридическим</label>
+                </div>
+            </div>
+            <div class="form__item">
+                <label for="actual_address_text"></label>
+                <input style="height: 120px;" id="actual_address_text" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="site" class="form__label">Сайт</label>
+                <input type="text" id="site" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="group" class="form__label">Группа</label>
+                <input type="text" id="group" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="inn" class="form__label">ИНН</label>
+                <input type="text" id="inn" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="kpp" class="form__label">КПП</label>
+                <input type="text" id="kpp" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="ogrn" class="form__label">ОГРН</label>
+                <input type="text" id="ogrn" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="okpo" class="form__label">ОКПО</label>
+                <input type="text" id="okpo" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="director" class="form__label">В лице</label>
+                <input type="text" id="director" class="form__input" placeholder="директора Иванова Ивана Ивановича">
+            </div>
+            <div class="form__item">
+                <label for="passport" class="form__label">Паспортные данные</label>
+                <input type="text" id="passport" class="form__input"
+                    placeholder="Например: номер 65 10 000000, выдан Кировским УВД г. Екатеринбурга">
+            </div>
+            <div class="form__item" style="margin-bottom: 60px;">
+                <label for="comment" class="form__label">Комментарий</label>
+                <input type="text" id="comment" class="form__input" placeholder="Видите только вы">
+            </div>
+
+            <h3 class="form__title">Расчетные счета</h3>
+
+            <div class="form__item">
+                <label for="account_number" class="form__label">Номер счета</label>
+                <input id="account_number" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="bank" class="form__label">Банк</label>
+                <input id="bank" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="bik" class="form__label">Бик</label>
+                <input id="bik" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="correspondent_account" class="form__label">Корр. счет</label>
+                <input id="correspondent_account" type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <label for="comment" class="form__label">Комментарий</label>
+                <input type="text" id="comment" class="form__input">
+            </div>
+            <div class="form__item">
+                <p class="form__label">Статус</p>
+                <div style="text-align: left;">
+                    <input type="checkbox" id="status_act" class="form__input ">
+                    <label for="status_act" class="form__label">Действующий</label>
+                    <input type="checkbox" id="status_close" class="form__input ">
+                    <label for="status_close" class="form__label">Закрытый</label>
+                </div>
+            </div>
+
+            <div class="form__item">
+                <label for="email" class="form__label">E-mail</label>
+                <input id="email" type="email" class="form__input">
+            </div>
+            <div class="form__item _show">
+                <label for="password" class="form__label">Пароль</label>
+                <input id="password" [type]="show ? 'text' : 'password'" class="form__input">
+                <a class="show-pass" (click)="password()">{{show ? 'Show' : 'Hide'}}</a>
+            </div>
+            <div class="form__item">
+                <label for="password" class="form__label">Повторите пароль</label>
+                <input id="password" [type]="show ? 'text' : 'password'" class="form__input">
+            </div>
+            <button class="form__btn" type="submit" routerLink="/confirm">Продолжить</button>
+        </form>
+
+        <div class="form__descr">
+            <p class="form__text">Уже есть аккаунт?</p>
+            <a class="form__link" routerLink="/login">Войти</a>
+        </div>
+    </div>
+</div>

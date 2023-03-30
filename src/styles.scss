@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #1360ED 0%, #FFFFFF 99.97%, #FFFFFF 99.98%, #FFFFFF 99.99%, rgba(255, 255, 255, 0.5) 100%, #FFFFFF 100%);
+    background-attachment: fixed;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container__out {
+    max-width: 1370px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+
+    &__img {
+        margin-right: 30px;
+    }
+
+    &__text {
+        padding-top: 11px;
+        width: 446px;
+        color: #FFFFFF;
+        margin-right: 45px;
+    }
+}
+
+.contacts {
+    color: #FFFFFF;
+
+    &__list-item {
+        margin-bottom: 20px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 2px;
+            left: -45px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.__location::before {
+            content: url(assets/images/point.png);
+        }
+
+        &.__phone::before {
+            content: url(assets/images/phone.png);
+        }
+
+        &.__mail::before {
+            content: url(assets/images/mail.png);
+        }
+    }
+}
+
+.social {
+    margin-right: 30px;
+    display: flex;
+    padding-top: 18px;
+
+    &__item {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+}
+
+.profile {
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+
+    &__link {
+        padding: 15px 40px;
+        border: 2px solid #FFFFFF;
+        border-radius: 30px;
+        margin-right: 18px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.main {
+    flex-grow: 1;
+}

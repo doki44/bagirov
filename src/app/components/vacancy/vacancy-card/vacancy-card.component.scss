@@ -1,0 +1,218 @@
+.search {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 90px;
+
+    &__input {
+        width: 100%;
+        height: 80px;
+        padding: 10px 250px 10px 40px;
+        font-family: inherit;
+        font-size: inherit;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    &__btn {
+        height: 100%;
+        position: absolute;
+        right: 84px;
+        padding: 22px 32px;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-left: 1px solid #BEBEBE;
+        border-right: 1px solid #BEBEBE;
+        color: #1360ED;
+    }
+
+    &__filter {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 26px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-image: url(../../../../assets/images/filter.png);
+    }
+}
+
+.filter {
+    background: #fff;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    &__label {
+        color: #393939;
+    }
+}
+
+.period {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 45px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        color: #1360ED;
+    }
+
+    &__text {
+        font-size: 22px;
+        color: #1360ED;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.filter-aside {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 12px 30px;
+    margin-bottom: 40px;
+    margin-right: 15px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #1360ED;
+    margin-bottom: 10px;
+}
+
+.show-more{
+    font-size: 20px;
+    color: #1360ED;
+    width: 132px;
+    border-bottom: 1px dashed #1360ED;
+    cursor: pointer;
+}
+
+.exception {
+    margin-bottom: 30px;
+
+    &__label {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 29px;
+        color: #1360ED;
+    }
+
+    &__input {
+        display: block;
+        margin-top: 30px;
+        height: 60px;
+        width: 100%;
+        padding: 15px 20px;
+        font-weight: 700;
+        font-size: 22px;
+        color: #CACACA;
+        border: 1px solid rgba(46, 144, 206, 1);
+        border-radius: 10px;
+        outline: none;
+    }
+}
+
+.kurs {
+    margin-bottom: 30px;
+
+    &__label {
+        font-size: 20px;
+        line-height: 26px;
+        color: #1360ED;
+    }
+}
+
+.specializations {
+    margin-bottom: 30px;
+
+    &__label {
+        font-size: 20px;
+        line-height: 26px;
+        color: #1360ED;
+    }
+}
+
+.branches {
+    margin-bottom: 30px;
+
+    &__label {
+        font-size: 20px;
+        line-height: 26px;
+        color: #1360ED;
+    }
+}
+
+.paid {
+    &__label {
+        font-size: 20px;
+        line-height: 26px;
+        color: #1360ED;
+    }
+}
+
+.vacancy__card{
+    width: 50%;
+    &-item{
+        cursor: pointer;
+        color: #1360ED;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    &-price{
+        margin-bottom: 20px;
+    }
+    &-btn{
+        padding: 15px 40px;
+        background: #1360ED;
+        border-radius: 10px;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-family: inherit;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+}
+
+.branch{
+    margin-bottom: 20px;
+}

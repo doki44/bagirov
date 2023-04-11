@@ -1,0 +1,80 @@
+.resume {
+    font-size: 24px;
+
+    &__inner {
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    &__descr-top {
+        border-bottom: 1px solid #BEBEBE;
+        padding: 30px;
+        display: flex;
+    }
+    &__descr-bottom{
+        padding: 30px;
+    }
+    &__description {
+        margin-right: 10px;
+        &-name {
+            font-size: 32px;
+            color: #000000;
+            margin-bottom: 40px;
+        }
+
+        &-birth {
+            margin-bottom: 20px;
+        }
+
+        &-birth,
+        &-feedback {
+            color: #595959;
+        }
+    }
+}
+
+.back-btn {
+    color: #1360ED;
+    padding: 36px 30px 0px;
+    display: inline-block;
+}
+
+.vacancy{
+    font-size: 32px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.about,
+.studing{
+    margin-bottom: 60px;
+}
+
+.about__title, 
+.studing__title,
+.languages__title{
+    font-size: 32px;
+    color: #595959;
+    margin-bottom: 20px;
+}
+
+.about__descr,
+.studing__descr{
+    font-size: 24px;
+    color: #595959;
+}
+
+.languages__rev-item{
+    color: #595959;
+    font-size: 24px;
+    background: rgba(190, 190, 190, 0.5);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 15px;
+    display: inline-block;
+}

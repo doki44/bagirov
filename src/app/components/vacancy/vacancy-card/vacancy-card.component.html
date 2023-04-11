@@ -1,0 +1,262 @@
+<div class="vacancy">
+    <div class="container">
+        <div class="vacancy__inner">
+            <div class="search">
+                <input class="search__input" type="text" name="search" id="search"
+                    placeholder="Направление, специальность или проект">
+                <button class="search__btn">Найти</button>
+                <button class="search__filter" (click)="showFilter()"></button>
+            </div>
+
+            <div class="filter" *ngIf="filter">
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Ядерная энергетика и технологии</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Информатика и вычислительная техника</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Электроника, радиотехника и системы связи</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Промышленная экология и биотехнологии</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Техника и технологии наземного транспорта</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Управление в технических системах</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Нефтегазовое дело и геология, геодезия</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Авиационная и ракетно-космическая техника</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Математика и механика</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Машиностроение</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Химические технологии</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Электро- и теплоэнергетика</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Технологии материалов</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Экономика и управление</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">История и археология</label>
+                </div>
+                <div class="filter__item">
+                    <input class="filter__input" type="checkbox" name="" id="filter">
+                    <label class="filter__label" for="filter">Оружие и системы вооружения</label>
+                </div>
+            </div>
+
+            <div class="period">
+                <p class="period__title">Веб разработка, 24 задачи</p>
+                <p class="period__text">За все время</p>
+            </div>
+
+            <div class="flex">
+                <div class="filter-aside">
+                    <div class="exception">
+                        <label for="" class="exception__label">
+                            Исключить слова
+                            <input type="text" class="exception__input" placeholder="Исключить слова">
+                        </label>
+                    </div>
+                
+                    <div class="kurs">
+                        <p class="title">Курс</p>
+                        <div class="kurs__item">
+                            <label for="" class="kurs__label">
+                                <input class="kurs__check" type="checkbox" name="" id="">
+                                1 курс
+                            </label>
+                        </div>
+                        <div class="kurs__item">
+                            <label for="" class="kurs__label">
+                                <input class="kurs__check" type="checkbox" name="" id="">
+                                2 курс
+                            </label>
+                        </div>
+                        <div class="kurs__item">
+                            <label for="" class="kurs__label">
+                                <input class="kurs__check" type="checkbox" name="" id="">
+                                3 курс
+                            </label>
+                        </div>
+                        <div class="kurs__item">
+                            <label for="" class="kurs__label">
+                                <input class="kurs__check" type="checkbox" name="" id="">
+                                4 курс
+                            </label>
+                        </div>
+                        <div class="kurs__item">
+                            <label for="" class="kurs__label">
+                                <input class="kurs__check" type="checkbox" name="" id="">
+                                5 курс
+                            </label>
+                        </div>
+                        <div class="kurs__item">
+                            <label for="" class="kurs__label">
+                                <input class="kurs__check" type="checkbox" name="" id="">
+                                6 курс
+                            </label>
+                        </div>
+                    </div>
+                
+                    <div class="specializations">
+                        <p class="title">Специализация</p>
+                        <div class="specializations__item">
+                            <label for="" class="specializations__label">
+                                <input class="specializations__check" type="checkbox" name="" id="">
+                                Архитектура
+                            </label>
+                        </div>
+                        <div class="specializations__item">
+                            <label for="" class="specializations__label">
+                                <input class="specializations__check" type="checkbox" name="" id="">
+                                Веб разработка
+                            </label>
+                        </div>
+                        <div class="specializations__item">
+                            <label for="" class="specializations__label">
+                                <input class="specializations__check" type="checkbox" name="" id="">
+                                Графический дизайн
+                            </label>
+                        </div>
+                        <div class="specializations__item">
+                            <label for="" class="specializations__label">
+                                <input class="specializations__check" type="checkbox" name="" id="">
+                                Инженерия
+                            </label>
+                        </div>
+                        <div class="specializations__item">
+                            <label for="" class="specializations__label">
+                                <input class="specializations__check" type="checkbox" name="" id="">
+                                Программирование
+                            </label>
+                        </div>
+                        <p class="show-more">Выбрать еще</p>
+                    </div>
+                
+                    <div class="branches">
+                        <p class="title">Отрасль</p>
+                        <div class="branches__item">
+                            <label for="" class="branches__label">
+                                <input type="checkbox" class="branches__check">
+                                Розничная торговля
+                            </label>
+                        </div>
+                        <div class="branches__item">
+                            <label for="" class="branches__label">
+                                <input type="checkbox" class="branches__check">
+                                Информационные технологии
+                            </label>
+                        </div>
+                        <div class="branches__item">
+                            <label for="" class="branches__label">
+                                <input type="checkbox" class="branches__check">
+                                Автомобильный бизнес
+                            </label>
+                        </div>
+                        <div class="branches__item">
+                            <label for="" class="branches__label">
+                                <input type="checkbox" class="branches__check">
+                                Услуги для бизнеса
+                            </label>
+                        </div>
+                        <div class="branches__item">
+                            <label for="" class="branches__label">
+                                <input type="checkbox" class="branches__check">
+                                Добывающая отрасль
+                            </label>
+                        </div>
+                        <p class="show-more">Выбрать еще</p>
+                    </div>
+
+                    <div class="paid">
+                        <p class="title">Уровень дохода</p>
+                        <div class="paid__item">
+                            <label for="" class="paid__label">
+                                <input type="radio" name="" id="" class="paid__radio">
+                                Не имеет значения
+                            </label>
+                        </div>
+                        <div class="paid__item">
+                            <label for="" class="paid__label">
+                                <input type="radio" name="" id="" class="paid__radio">
+                                от 15 000 руб.
+                            </label>
+                        </div>
+                        <div class="paid__item">
+                            <label for="" class="paid__label">
+                                <input type="radio" name="" id="" class="paid__radio">
+                                от 45 000 руб.
+                            </label>
+                        </div>
+                        <div class="paid__item">
+                            <label for="" class="paid__label">
+                                <input type="radio" name="" id="" class="paid__radio">
+                                от 80 000 руб.
+                            </label>
+                        </div>
+                        <div class="paid__item">
+                            <label for="" class="paid__label">
+                                <input type="radio" name="" id="" class="paid__radio">
+                                от 110 000 руб.
+                            </label>
+                        </div>
+                        <div class="paid__item">
+                            <label for="" class="paid__label">
+                                <input type="radio" name="" id="" class="paid__radio">
+                                от 145 000 руб.
+                            </label>
+                        </div>
+                        <div class="paid__item">
+                            <label for="" class="paid__label">
+                                <input type="radio" name="" id="" class="paid__radio">
+                                от 175 000 руб.
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="vacancy__card">
+                    <div class="vacancy__card-item" routerLink="/vacancy-offer">
+                        <p class="vacancy__card-title">UI/UX Веб-дизайн</p>
+                        <p class="vacancy__card-price">90 000 руб.</p>
+                        <p class="branch">Розничная торговля</p>
+                        <button class="vacancy__card-btn">Откликнуться</button>
+                        <button class="vacancy__card-btn">Связаться</button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>
